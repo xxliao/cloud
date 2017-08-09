@@ -1,0 +1,4 @@
+#!/bin/sh
+/usr/bin/aria2c --enable-rpc=true --rpc-listen-all --rpc-allow-origin-all=true --rpc-listen-all=true --dir=/www/wwwroot/files.liaoxx.win --rpc-user=liaoxx --rpc-passwd=ynwjtg --rpc-secret=ynwjtg -D
+
+exit 0
