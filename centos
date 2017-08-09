@@ -26,4 +26,5 @@ mv ./webui-aria2 /www/wwwroot/
 wget https://raw.githubusercontent.com/xxliao/cloud/master/StartAria2
 chmod 755 StartAria2
 mv StartAria2 /usr/bin/StartAria2
-
+#添加自启动
+echo /usr/bin/StartAria2 >> /etc/rc.d/rc.local
