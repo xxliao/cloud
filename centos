@@ -1,0 +1,27 @@
+yum update -y
+yum upgrade -y 
+
+yum install vim git -y
+
+#安装锐速一键加速
+wget -N --no-check-certificate https://github.com/91yun/serverspeeder/raw/master/serverspeeder.sh && bash serverspeeder.sh
+
+#安装宝塔面板
+wget -O install.sh http://download.bt.cn/install/install.sh && sh install.sh
+
+#安装youtube-dl
+wget https://yt-dl.org/downloads/latest/youtube-dl -O /usr/local/bin/youtube-dl
+chmod a+rx /usr/local/bin/youtube-dl
+wget https://raw.githubusercontent.com/xxliao/cloud/master/youtube-dl.conf
+mv youtube-dl.conf /etc/youtube-dl.conf
+
+#安装aria2
+pt-get install aria2
+
+#安装webui-aria2
+git clone https://github.com/ziahamza/webui-aria2.git
+mv ./webui-aria2 /www/wwwroot/
+wget https://raw.githubusercontent.com/xxliao/cloud/master/StartAria2
+chmod 755 StartAria2
+mv StartAria2 /usr/bin/StartAria2
+
