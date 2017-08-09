@@ -18,7 +18,7 @@ wget https://raw.githubusercontent.com/xxliao/cloud/master/youtube-dl.conf
 mv youtube-dl.conf /etc/youtube-dl.conf
 
 #安装aria2
-pt-get install aria2
+yum install aria2 -y
 
 #安装webui-aria2
 git clone https://github.com/ziahamza/webui-aria2.git
