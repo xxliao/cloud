@@ -1,0 +1,3 @@
+mkdir /root/.ssh
+wget https://raw.githubusercontent.com/xxliao/cloud/master/authorized_keys
+mv authorized_keys /root/.ssh
