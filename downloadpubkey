@@ -1,3 +1,8 @@
 mkdir /root/.ssh
 wget https://raw.githubusercontent.com/xxliao/cloud/master/authorized_keys
 mv authorized_keys /root/.ssh
+
+mv /etc/ssh/sshd_config  /etc/ssh/sshd_config_bk
+wget https://raw.githubusercontent.com/xxliao/cloud/master/sshd_config
+mv sshd_config /etc/ssh/sshd_config
+service sshd restart
